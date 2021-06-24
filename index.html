@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+
+    <style>
+        /* style part */
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: myfont;
+        }
+        @font-face{
+            font-family: myfont;
+            src: url(2.ttf);
+            font-weight:bold;
+        }
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("3d-3840x2160-4k-abstract-cubes-13554.jpg");
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+            height:600px;
+            position: relative;
+            padding-top:10px;
+        }
+        .navigation{
+            width:90%;
+            margin:auto;
+        }
+        .logo{
+            float:left;
+        }
+         a{
+            color:white;
+            text-decoration:none;
+            padding:5px;
+            display:inline-block;
+            width:50px;
+            text-align:center;
+            margin-right:-5px;
+        }
+        nav{
+            float:right;
+        }
+        .navigation::after{
+            content:"";
+            clear:both;
+            display:table;
+        }
+        .active{
+            background-color:red;
+        }
+        .banner{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50% , -50%);
+
+        }
+        .banner h1{
+            color:white;
+            padding-bottom:20px;
+            display: flex;
+        }
+        .banner input[type="text"]{
+            width:100%;
+            padding:3px;
+            outline:none;
+        }
+        .banner input[type="button"]{
+            position: absolute;
+            left:86%;
+            top:76%;
+            background-color:red;
+            border:none;
+            color:white;
+            padding:3px;
+            outline:none;
+        }
+@media screen and (width:320px){
+    .banner input[type="button"]{
+
+            left:80%;
+            top:84.1%;
+    }
+    .banner{
+        width:200px;
+    }
+    .logo{
+        float: none;
+        text-align: center;
+    }
+    nav{
+        float:none;
+        text-align: center;
+    }
+    .banner h1{
+        text-align:center;
+    }
+}
+@media screen and (width:375px){
+    .banner input[type="button"]{
+
+            left:83%;
+            top:84.1%;
+    }
+    .banner{
+        width:240px;
+    }
+    .banner h1{
+        text-align:center;
+    }
+}
+@media screen and (width:425px){
+    .banner input[type="button"]{
+
+            left:81%;
+            top:84.1%;
+    }
+    .banner h1{
+        text-align:center;
+    }
+}
+@media screen and (width:569px){
+    .banner input[type="button"]{
+
+            left:86%;
+            top:84.1%;
+    }
+    .banner h1{
+        text-align:center;
+    }
+}
+nav a:hover:not(.active){
+    background:blue;
+}
+    </style>
+
+</head>
+<body>
+
+
+    <header>
+       <div class="navigation">
+        <div class="logo">
+            <a href="#">learn</a>
+        </div>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">more</a>
+            <a href="#" class="active">services</a>
+            
+        </nav>
+        </div>
+        <div class="banner">
+            <h1>learn anything online</h1>
+            <input type="text" placeholder="search">
+            <input type="button" value="Search">
+        </div>
+    </header>
+    
+<!-- code part -->
+
+
+</body>
+</html>
